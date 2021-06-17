@@ -1,13 +1,19 @@
 'use strict';
 /**
 * 与えられた自然数の階乗を返す
-* 階乗とは、1からその与えられた自然数までの数をすべてかけたものです
+* 階乗とは、1からその与えられた自然数までの数をすべてかけたもので
 * @param {Number} n
 * @returns {Number}
 */
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  let num = n;
+
+  for(let i = 0; i < n; i++){
+    result *= num;
+    num--;
+  }
+
   return result;
 }
 const assert = require('assert');
