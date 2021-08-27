@@ -7,7 +7,15 @@
 */
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  /*for (let i = 1; i <= n; i++){//1からnまで掛けていく
+    result = result * i;
+  }*/
+  for(let i=n; i>=1; i--){//nから1まで掛けていく
+    result = result * i;
+
+    console.log(`iが ${ i } のとき ${result}`);
+    }
+ 
   return result;
 }
 const assert = require('assert');
