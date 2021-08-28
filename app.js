@@ -7,7 +7,7 @@
 */
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  result = (n != 0) ? n * factorial(n - 1) : 1; // 再帰処理による階乗計算
   return result;
 }
 const assert = require('assert');
