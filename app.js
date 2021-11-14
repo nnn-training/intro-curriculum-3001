@@ -7,8 +7,8 @@
 */
 function factorial(n) {
   let result = 1;
-  if(let i = 1; i <= n; n--){
-  
+  for(let i = 1; i <= n; n--){
+    result = result * n;
   }
   return result;
 }
