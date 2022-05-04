@@ -6,8 +6,10 @@
 * @returns {Number}
 */
 function factorial(n) {
-  let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  let result = n;
+  if (n > 1) {
+    result = factorial(n - 1) * n;
+  }
   return result;
 }
 const assert = require('assert');
