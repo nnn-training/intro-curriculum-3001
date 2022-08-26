@@ -5,6 +5,7 @@
  * @param {Number} n
  * @returns {Number}
  */
+// 回帰関数
 function factorial(n) {
   if (n == 1){
     return 1;
