@@ -1,4 +1,9 @@
 01 test
 02 test
-03
-A
+-<<<<<<< HEAD
+-03
+-A
+-=======
+-03 test
+->>>>>>> fix/removd-ni
++03 test
