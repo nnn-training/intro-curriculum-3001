@@ -7,7 +7,12 @@
  */
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  
+  if ( n == 1 ) return 1;
+  else if ( n == 2 ) return 2;
+  else if ( n >= 3 ) {
+    result = n * factorial(n-1);
+  }
   return result;
 }
 const assert = require('assert');
