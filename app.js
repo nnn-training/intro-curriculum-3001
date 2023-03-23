@@ -2,7 +2,7 @@
 /**
  * 与えられた自然数の階乗を返す
  * 階乗とは、1からその与えられた自然数までの数をすべてかけたものです
- * @param {Number} n コマンドライン引数で与えられた数値
+ * @param {Number} n
  * @returns {Number}
  */
 function factorial(n) {
