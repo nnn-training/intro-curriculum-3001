@@ -10,6 +10,7 @@ function factorial(n) {
    for(let i = 1; i <= n; i++){
     result = result * i;
    }
+   
   return result;
 }
 const assert = require('node:assert');
