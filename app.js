@@ -5,9 +5,21 @@
  * @param {Number} n
  * @returns {Number}
  */
+
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  
+  //forの場合
+  // for (let i = n; i <= 1; i--){
+  //   result *= i;
+  // }
+
+  //whileの場合
+  while(n > 1){
+    result *= n;
+    n -- ;
+  }
+
   return result;
 }
 const assert = require('node:assert');
