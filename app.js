@@ -1,4 +1,10 @@
 'use strict';
+
+function _factorial(n, p) {
+  if (n === 1) return p;
+  return _factorial(n-1, p*n);
+}
+
 /**
  * 与えられた自然数の階乗を返す
  * 階乗とは、1からその与えられた自然数までの数をすべてかけたものです
@@ -7,7 +13,7 @@
  */
 function factorial(n) {
   let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  result = _factorial(n, result);
   return result;
 }
 const assert = require('node:assert');
