@@ -6,10 +6,22 @@
  * @returns {Number}
  */
 function factorial(n) {
-  let result = 1;
-  // TODO このコメントを消して正しく実装してください。
-  return result;
+  // 0! は 1 と定義されているので、n が 0 の場合は 1 を返す
+  if (n === 0) {
+    return 1;
+  }
+
+  // 階乗を計算するための変数を初期化
+  let sum = 1;
+
+  // 1 から n までの整数の積を計算
+  for (let i = 1; i <= n; i++) {
+    sum *= i;
+  }
+
+  return sum;
 }
+
 const assert = require('node:assert');
 assert.strictEqual(factorial(1), 1, `1の階乗は1ですが、実際は${factorial(1) }でした`);
 assert.strictEqual(factorial(2), 2, `2の階乗は2ですが、実際は${factorial(2) }でした`);
