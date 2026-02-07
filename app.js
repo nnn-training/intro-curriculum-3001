@@ -6,8 +6,12 @@
  * @returns {Number}
  */
 function factorial(n) {
-  let result = 1;
-  // TODO このコメントを消して正しく実装してください。
+  let result = 0;
+  let sum = 1;
+  for (let i = 1; i <= n; i++) {
+  sum = sum * i;
+  }
+  result = sum;
   return result;
 }
 const assert = require('node:assert');
