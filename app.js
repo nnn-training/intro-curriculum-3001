@@ -7,6 +7,13 @@
  */
 function factorial(n) {
   let result = 1;
+  for (let i = 1; n >= i; i ++) {
+    result *= i
+  }
+  /** カウントダウン
+   * for (let i = n; i >= 1; i --) {
+   * result *= i}
+   */
   // TODO このコメントを消して正しく実装してください。
   return result;
 }
